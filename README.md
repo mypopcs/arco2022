@@ -18,14 +18,3 @@ vue create app
 ```
 yarn add --dev @arco-design/web-vue
 ```
-# main.js 中 完整引入
-```
-import { createApp } from 'vue'
-import ArcoVue from '@arco-design/web-vue';
-import App from './App.vue';
-import '@arco-design/web-vue/dist/arco.css';
-
-const app = createApp(App);
-app.use(ArcoVue);
-app.mount('#app');
-```

@@ -32,3 +32,15 @@ module.exports = {
     }
 }
 ```
+# main.js 中 完整引入Arco Design
+```
+import { createApp } from 'vue'
+import ArcoVue from '@arco-design/web-vue';
+import App from './App.vue';
+import '@arco-design/web-vue/dist/arco.css';
+
+const app = createApp(App);
+app.use(ArcoVue);
+app.mount('#app');
+```
+引入完成后默认不会显示效果，按照官网教程引用各组件才会显示效果
